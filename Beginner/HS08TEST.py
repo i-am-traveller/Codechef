@@ -1,0 +1,12 @@
+x,y=map(str,input().split());
+want=int(x);
+avail=float(y);
+if(avail>=want+0.5):
+    if(want%5==0):
+        avail-=want;
+        avail-=.5;
+        print("{:.2f}".format(avail));
+    else:
+        print("{:.2f}".format(avail));
+else:
+    print("{:.2f}".format(avail));
